@@ -1,5 +1,4 @@
 #TileCache Docker File
-----
 This repository contains Dockerfile of [TileCache](http://tilecache.org/) Dcoker's automated build.  
 
 ##Base Docker Image
@@ -16,7 +15,7 @@ $ git clone https://github.com/KMR-zoar/tilecache.git
 
 ```
 $ cd tilecache
-$ docker build --no-cache -t tilecache.
+$ docker build --no-cache -t tilecache .
 ```
 
 ### Edit the configuration file
@@ -28,5 +27,5 @@ Recommended that you specify a cache directory with `-v` option.
 
 ```
 $ mkdir -p /tmp/tilecache
-$ docker run -i -p 8080:8080 -v /tmp/tilecache/:/tmp/tilecache/ -t tilecache
+$ docker run -i -d -p 8080:8080 -v /tmp/tilecache/:/tmp/tilecache/ -t zoar/tilecache
 ```

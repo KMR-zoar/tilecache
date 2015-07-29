@@ -15,7 +15,7 @@ $ git clone https://github.com/KMR-zoar/tilecache.git
 
 ```
 $ cd tilecache
-$ docker build --no-cache -t tilecache .
+$ docker build -t zoar/tilecache .
 ```
 
 ### Edit the configuration file
